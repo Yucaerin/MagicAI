@@ -21,7 +21,7 @@
 ⚠️ **Summary of the Vulnerability**  
 MagicAI’s document analyzer feature allows users to upload `.csv` or document files. The backend does **not** sufficiently validate file content against its declared mimetype. As a result:
 
-- Attacker can upload a PHP file disguised as a `.csv` (e.g., `shell.php` with `Content-Type: text/csv`)
+- Attacker can upload a PHP file disguised as a `.csv` (e.g., `shell.csv` with `Content-Type: text/csv`)
 - File gets stored in a publicly accessible folder or accessible via File Manager
 - Remote command execution is possible if file is executed on server
 
